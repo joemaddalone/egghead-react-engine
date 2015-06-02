@@ -7,10 +7,10 @@ var Index = React.createClass({
   },
   render:function(){
     return (
-        <Page {...this.props}>
+        <div>
           <h1>{this.props.title}</h1>
           <button onClick={this.clickHandler}>Click</button>
-        </Page>
+        </div>
       )
   }
 });
