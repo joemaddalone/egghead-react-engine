@@ -24,7 +24,7 @@ var handler = function(req, res){
   if(id){
     var egghead = eggheads.egghead(id);
     if(egghead){
-      title = egghead.fname + ' ' + egghead.lname;
+      title = egghead.fname + ' ' + egghead.lname
     }
   }
   res.render(req.url, {
@@ -32,7 +32,7 @@ var handler = function(req, res){
   })
 }
 
-app.get('/', handler);
+app.get('', handler);
 app.get('/:id', handler);
 
 app.listen(4000);
