@@ -1,5 +1,6 @@
+'use strict';
+
 var React = require('react');
-var Page = require('./page.jsx');
 
 var Index = React.createClass({
   render:function(){

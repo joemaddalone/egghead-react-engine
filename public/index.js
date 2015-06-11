@@ -1,7 +1,7 @@
 'use strict';
 
 var Client = require('react-engine/lib/client');
-var Routes = require('./routes.jsx')
+var Routes = require('./routes.jsx');
 
 require('./views/**/*.jsx', {glob: true});
 

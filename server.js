@@ -19,7 +19,7 @@ app.use(express.static(__dirname + '/public'));
 
 var handler = function(req, res){
   res.render(req.url, {
-    title: 'Person # ' + (req.params.id || 'EMPTY')
+    title: 'Person # '  + (req.params.id || 'EMPTY')
   })
 }
 
