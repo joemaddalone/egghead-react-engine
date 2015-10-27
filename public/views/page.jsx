@@ -15,7 +15,7 @@ var Page = React.createClass({
               {[1,2,3,4,5,6,7,8,9,0].map(function(item){
                 return (
                   <li key={item}>
-                    <Router.Link to="person" params={{id: item}}>
+                    <Router.Link to={'/person/' + item}>
                       Person # {item}
                     </Router.Link>
                   </li>
