@@ -7,7 +7,7 @@ var Page = React.createClass({
     var nav = eggheads.data.map(function(egghead){
       return (
         <li key={egghead.id} >
-          <Router.Link to="egghead" params={{id: egghead.id}}>
+          <Router.Link to={'/egghead/' + egghead.id}>
             {egghead.fname + ' ' + egghead.lname}
           </Router.Link>
         </li>
