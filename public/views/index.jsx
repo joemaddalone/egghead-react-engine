@@ -1,14 +1,12 @@
 var React = require('react');
 var Page = require('./page.jsx');
 
-var Index = React.createClass({
-  render:function(){
+var Index = function(props){
     return (
-        <Page {...this.props}>
-          <h1>{this.props.title}</h1>
+        <Page {...props}>
+          <h1>{props.title}</h1>
         </Page>
       )
-  }
-});
+  };
 
 module.exports = Index;

@@ -1,18 +1,16 @@
 var React = require('react');
 
-var Page = React.createClass({
-  render:function(){
+var Page = function(props){
     return (
         <html>
           <head>
-            <title>{this.props.title}</title>
+            <title>{props.title}</title>
           </head>
           <body>
-            {this.props.children}
+            {props.children}
           </body>
         </html>
       )
-  }
-});
+  };
 
 module.exports = Page;

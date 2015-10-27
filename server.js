@@ -25,3 +25,4 @@ app.get('', index);
 app.get('/:msg', index);
 
 app.listen(4000);
+console.log('Now serving on localhost:4000');
