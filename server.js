@@ -7,7 +7,8 @@ var renderer = require('react-engine');
 var eggheads = require('./public/data/eggheads');
 var app = express();
 var engine = renderer.server.create({
-  reactRoutes: __dirname + '/public/routes.jsx'
+  routes: __dirname + '/public/routes.jsx',
+  routesFilePath: __dirname + '/public/routes.jsx'
 });
 
 app.engine('.jsx', engine);

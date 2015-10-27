@@ -8,9 +8,9 @@ var Index = require('./views/index.jsx');
 var Egghead = require('./views/egghead.jsx');
 
 var routes = (
-  <Router.Route handler={App}>
-    <Router.Route name="home" path="/" handler={Index} />
-    <Router.Route name="egghead" path="/:id" handler={Egghead} />
+  <Router.Route component={App}>
+    <Router.Route path="/" component={Index} />
+    <Router.Route path="/egghead/:id" component={Egghead} />
   </Router.Route>
 );
 
