@@ -5,9 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.12.3",
-    "react": "^0.14.0",
+    "react": "^15.0.1",
     "node-jsx": "^0.13.3",
-    "react-router": "^1.0.0-rc3",
+    "react-router": "^2.1.1",
     "react-engine": "^3.0.0-alpha.1"
   },
   "devDependencies": {},
