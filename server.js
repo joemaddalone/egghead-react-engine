@@ -6,7 +6,8 @@ var express = require('express');
 var renderer = require('react-engine');
 var app = express();
 var engine = renderer.server.create({
-  reactRoutes: __dirname + '/public/routes.jsx'
+  routes: __dirname + '/public/routes.jsx',
+  routesFilePath: __dirname + '/public/routes.jsx'
 });
 
 app.engine('.jsx', engine);

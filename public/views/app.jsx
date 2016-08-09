@@ -8,7 +8,7 @@ var App = React.createClass({
   render:function(){
     return (
       <Page {...this.props}>
-        <Router.RouteHandler {...this.props} />
+        {this.props.children}
       </Page>
     );
   }

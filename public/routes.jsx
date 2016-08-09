@@ -7,9 +7,9 @@ var Index = require('./views/index.jsx');
 var App  = require('./views/app.jsx');
 
 var routes = (
-  <Router.Route handler={App}>
-    <Router.Route path="/" name="home" handler={Index}></Router.Route>
-    <Router.Route path="/:id" name="person" handler={Index}></Router.Route>
+  <Router.Route component={App}>
+    <Router.Route path="/" component={Index}></Router.Route>
+    <Router.Route path="/person/:id" component={Index}></Router.Route>
   </Router.Route>
 );
 
